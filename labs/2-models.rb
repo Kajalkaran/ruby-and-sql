@@ -18,6 +18,25 @@ Salesperson.destroy_all
 
 # 1a. check out the schema file
 # 1b. check out the model file
+puts "There are #{Salesperson.all.count} salepeople "
+new_salesperson = Salesperson.new
+puts new_salesperson.inspect
+new_salesperson["first_name"] = "Ben"
+new_salesperson["last_name"] = "Block"
+new_salesperson["email"] = "ben@gmail.com"
+new_salesperson.save
+puts new_salesperson.inspect
+puts "There are #{Salesperson.all.count} salepeople "
+
+new_salesperson2 = Salesperson.new
+new_salesperson2["first_name"] = "Brian"
+new_salesperson2["last_name"] = "Eng"
+new_salesperson2["email"] = "brian@gmail.com"
+new_salesperson2.save
+puts new_salesperson2.inspect
+puts "There are #{Salesperson.all.count} salepeople "
+
+
 
 # 2. insert 1-2 rows in salespeople table.
 

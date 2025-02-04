@@ -60,3 +60,6 @@ amazon["url"] = "https://www.amazon.com"
 puts amazon.inspect
 amazon.save
 # 7. delete a row
+amazon = Company.find_by({"name"=> "Amazon"})
+puts amazon.inspect
+amazon.destroy
