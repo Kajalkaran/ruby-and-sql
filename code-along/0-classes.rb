@@ -4,5 +4,12 @@
 # rails runner code-along/0-classes.rb
 
 # String Class
+class Dog
+    def speak
+        puts "woof!"
+    end
+end
 
 # String Methods
+Doberman = Dog.new
+puts Doberman.speak
