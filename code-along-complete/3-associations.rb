@@ -49,7 +49,7 @@ apple = Company.find_by({ "name" => "Apple" })
 # next, query to find all rows in contacts with relationship to Apple
 # "talk" to the contacts table using the Contact model:
 
-apple_contacts = Contact.where({ "company_id" => apple["id"] })
+apple_contacts = Contact.where({"company_id" => apple["id"]})
 puts apple_contacts.inspect
 
 puts "Contacts at Apple: #{apple_contacts.count}"
