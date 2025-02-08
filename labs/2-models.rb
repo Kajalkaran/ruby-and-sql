@@ -57,6 +57,7 @@ ben.save
 # Salespeople: 2
 # Ben Block
 # Brian Eng
+salespeople = Salesperson.all
 for Salesperson in salespeople
     first_name = ben["first_name"]
     last_name = ben["last_name"]
